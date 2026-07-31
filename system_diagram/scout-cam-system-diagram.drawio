@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36">
   <diagram name="Page-1" id="UqMpDVYS6p0oJUD5IUgk">
-    <mxGraphModel dx="2829" dy="1504" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="3124" dy="1358" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -95,9 +95,9 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="AfVF2Fsmn2DavCNV8CK6-9" edge="1" parent="1" source="taGACTG_h_-Wan0TD0rd-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1.014;exitY=0.229;exitDx=0;exitDy=0;startArrow=classic;startFill=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitPerimeter=0;" target="AfVF2Fsmn2DavCNV8CK6-14">
+        <mxCell id="AfVF2Fsmn2DavCNV8CK6-9" edge="1" parent="1" source="taGACTG_h_-Wan0TD0rd-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1.014;exitY=0.229;exitDx=0;exitDy=0;startArrow=classic;startFill=1;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;" target="wrVT5z3UHosS5BUSbuwE-4">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="890" y="280" as="targetPoint" />
+            <mxPoint x="950" y="52" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="AfVF2Fsmn2DavCNV8CK6-11" connectable="0" parent="AfVF2Fsmn2DavCNV8CK6-9" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Live Video (WebRTC)&lt;/font&gt;" vertex="1">
@@ -134,6 +134,11 @@
             <mxPoint x="740" y="440" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="wrVT5z3UHosS5BUSbuwE-11" edge="1" parent="1" source="AfVF2Fsmn2DavCNV8CK6-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="750" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="AfVF2Fsmn2DavCNV8CK6-6" parent="1" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#ffffff;fillColor=#232F3E;dashed=0;verticalLabelPosition=middle;verticalAlign=bottom;align=center;html=1;whiteSpace=wrap;fontSize=10;fontStyle=1;spacing=3;shape=mxgraph.aws4.productIcon;prIcon=mxgraph.aws4.s3;" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;AWS S3&lt;/font&gt;" vertex="1">
           <mxGeometry height="131.26" width="100" x="700" y="500" as="geometry" />
         </mxCell>
@@ -154,6 +159,16 @@
         </mxCell>
         <mxCell id="Anj5RL-SqtUb1iNyHCp_-13" parent="AfVF2Fsmn2DavCNV8CK6-13" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 23px;&quot;&gt;...&lt;/font&gt;" vertex="1">
           <mxGeometry height="30" width="60" x="9" y="138.13" as="geometry" />
+        </mxCell>
+        <mxCell id="wrVT5z3UHosS5BUSbuwE-5" edge="1" parent="AfVF2Fsmn2DavCNV8CK6-17" source="AfVF2Fsmn2DavCNV8CK6-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="115" y="-144.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wrVT5z3UHosS5BUSbuwE-6" connectable="0" parent="wrVT5z3UHosS5BUSbuwE-5" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Live Video (RTSP)&lt;/font&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.2082" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="AfVF2Fsmn2DavCNV8CK6-15" parent="AfVF2Fsmn2DavCNV8CK6-17" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Scout Cam Camera Client (C++)&lt;/b&gt;&lt;/font&gt;" vertex="1">
           <mxGeometry height="30" width="190" x="20" y="10" as="geometry" />
@@ -177,7 +192,7 @@
             <mxPoint x="780" y="470" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="AfVF2Fsmn2DavCNV8CK6-20" parent="1" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#ED7100;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.container_registry_image;" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Image&lt;/font&gt;" vertex="1">
+        <mxCell id="AfVF2Fsmn2DavCNV8CK6-20" parent="1" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#ED7100;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.container_registry_image;" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;Detect Image / Preview&lt;/span&gt;" vertex="1">
           <mxGeometry height="48" width="48" x="870" y="526" as="geometry" />
         </mxCell>
         <mxCell id="AfVF2Fsmn2DavCNV8CK6-49" connectable="0" parent="1" style="group" value="" vertex="1">
@@ -212,16 +227,64 @@
         <mxCell id="GgHvBXk-zu4zl0gQf3xi-3" edge="1" parent="1" source="AfVF2Fsmn2DavCNV8CK6-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;" target="AfVF2Fsmn2DavCNV8CK6-1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="1145" y="1031" />
-              <mxPoint x="-85" y="1031" />
+              <mxPoint x="1145" y="980" />
+              <mxPoint x="-85" y="980" />
             </Array>
             <mxPoint x="1145" y="1030" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="GgHvBXk-zu4zl0gQf3xi-4" connectable="0" parent="GgHvBXk-zu4zl0gQf3xi-3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;AWS S3 Presigned URL&lt;/font&gt;" vertex="1">
+        <mxCell id="GgHvBXk-zu4zl0gQf3xi-4" connectable="0" parent="GgHvBXk-zu4zl0gQf3xi-3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;AWS S3 Presigned URL &amp;amp; Streaming Commands&lt;/font&gt;" vertex="1">
           <mxGeometry relative="1" x="0.1176" y="1" as="geometry">
             <mxPoint x="-1" as="offset" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="wrVT5z3UHosS5BUSbuwE-2" edge="1" parent="1" source="wrVT5z3UHosS5BUSbuwE-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-230" y="856.6350000000002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wrVT5z3UHosS5BUSbuwE-3" connectable="0" parent="wrVT5z3UHosS5BUSbuwE-2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Streaming Start / Stop Commands&lt;/font&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0885" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wrVT5z3UHosS5BUSbuwE-1" parent="1" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/Cache_Redis_Product.svg;" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Redis Pub / Sub&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="76.63" width="91.23" x="-650" y="810" as="geometry" />
+        </mxCell>
+        <mxCell id="wrVT5z3UHosS5BUSbuwE-4" parent="1" style="sketch=0;points=[[0.015,0.015,0],[0.985,0.015,0],[0.985,0.985,0],[0.015,0.985,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];verticalLabelPosition=bottom;html=1;verticalAlign=top;aspect=fixed;align=center;pointerEvents=1;shape=mxgraph.cisco19.rect;prIcon=media_server;fillColor=#FAFAFA;strokeColor=#005073;" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;MediaMTX Server&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="75.63" width="96.8" x="1096.6" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="wrVT5z3UHosS5BUSbuwE-8" edge="1" parent="1" source="wrVT5z3UHosS5BUSbuwE-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.429;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=none;startFill=0;" target="taGACTG_h_-Wan0TD0rd-52">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="750" y="80" />
+            </Array>
+            <mxPoint x="750" y="180" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wrVT5z3UHosS5BUSbuwE-10" parent="1" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#ED7100;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.container_registry_image;" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;Camera Preview Image&lt;/span&gt;" vertex="1">
+          <mxGeometry height="48" width="48" x="726" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="wrVT5z3UHosS5BUSbuwE-19" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1360" y="1030" />
+              <mxPoint x="-600" y="1030" />
+            </Array>
+            <mxPoint x="1360" y="210" as="sourcePoint" />
+            <mxPoint x="-600" y="930" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wrVT5z3UHosS5BUSbuwE-20" connectable="0" parent="wrVT5z3UHosS5BUSbuwE-19" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Stop Streaming Command&lt;/font&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.1979" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wrVT5z3UHosS5BUSbuwE-12" parent="1" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://icons.diagrams.net/assets/kubernetes/1/cronjob.svg" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Celery Worker / Beat&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="80" x="1320" y="87.81" as="geometry" />
+        </mxCell>
+        <mxCell id="wrVT5z3UHosS5BUSbuwE-16" edge="1" parent="1" source="wrVT5z3UHosS5BUSbuwE-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;" target="wrVT5z3UHosS5BUSbuwE-4">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
