@@ -1,6 +1,6 @@
 <mxfile host="Electron">
   <diagram name="Page-1" id="XjMUkIUpzNLQUYDuEwoP">
-    <mxGraphModel dx="1341" dy="2015" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1703" dy="2316" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -128,6 +128,20 @@
         </mxCell>
         <mxCell id="pdjH-iYp8lPD20BLbSk8-47" connectable="0" parent="pdjH-iYp8lPD20BLbSk8-46" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;b style=&quot;font-size: 16px;&quot;&gt;Publish:&lt;/b&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt; Stop Streaming Command&lt;/span&gt;" vertex="1">
           <mxGeometry relative="1" x="-0.0235" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pdjH-iYp8lPD20BLbSk8-48" edge="1" parent="1" style="endArrow=classic;startArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="1360" y="1000" />
+            </Array>
+            <mxPoint x="880" y="1000" as="sourcePoint" />
+            <mxPoint x="1360" y="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pdjH-iYp8lPD20BLbSk8-49" connectable="0" parent="pdjH-iYp8lPD20BLbSk8-48" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;&amp;nbsp;Long Poll&lt;/span&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.4082" y="-1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
