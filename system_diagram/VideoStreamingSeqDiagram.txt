@@ -7,7 +7,7 @@ participant iOS App
 participant Celery Beat
 
 Camera->Backend:**Long Poll:** cameras/streaming/command/
-Camera<--Backend:**Timeout:** Command = None
+Camera<--Backend:**Timeout(30 seconds):** Command = None
 Camera->Backend:**Long Poll:** cameras/streaming/command/
 
 iOS App->Backend:**Start:** cameras/<public_camera_id>/streaming/start/
@@ -19,6 +19,7 @@ MediaMTX->Backend:Authorize Publisher
 MediaMTX<--Backend:HTTP 200 OK
 
 iOS App->MediaMTX:Initiate WebRTC / WHEP (with retry)
+note left of iOS App:Retry in case the camera doesn't connect\nbefore the iOS request times out.
 MediaMTX->Backend:Authorize Reader
 MediaMTX<--Backend:HTTP 200 OK
 iOS App<-MediaMTX:Video (WebRTC)
