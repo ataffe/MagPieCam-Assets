@@ -1,0 +1,37 @@
+title Video Streaming Lifecycle
+
+participant Camera
+participant Backend
+participant MediaMTX
+participant iOS App
+participant Celery Beat
+
+Camera->Backend:**Long Poll:** cameras/streaming/command/
+Camera<--Backend:**Timeout:** Command = None
+Camera->Backend:**Long Poll:** cameras/streaming/command/
+
+iOS App->Backend:**Start:** cameras/<public_camera_id>/streaming/start/
+iOS App<--Backend:HTTP 200 OK
+Camera<--Backend:**Long Poll Return:** Command = Start
+
+Camera->MediaMTX:Publish RTSP
+MediaMTX->Backend:Authorize Publisher
+MediaMTX<--Backend:HTTP 200 OK
+
+iOS App->MediaMTX:Initiate WebRTC / WHEP (with retry)
+MediaMTX->Backend:Authorize Reader
+MediaMTX<--Backend:HTTP 200 OK
+iOS App<-MediaMTX:Video (WebRTC)
+
+Camera->Backend:**Long Poll:** cameras/streaming/command/
+
+Celery Beat->MediaMTX:Get Active Readers
+Celery Beat<--MediaMTX:Num Readers = 1
+
+iOS App->MediaMTX:End WebRTC Session
+
+Celery Beat->MediaMTX:Get Active Readers
+Celery Beat<--MediaMTX:Num Readers = 0
+Celery Beat->Backend:Set Command = Stop
+Camera<--Backend:**Long Poll Return:** Command = Stop
+Camera->MediaMTX:Stop RTSP Publish
